@@ -15,7 +15,6 @@ const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
-
 server.on("error", (error) => {
   console.error("Server Error:", error);
 });
